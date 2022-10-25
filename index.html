@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel = "stylesheet" href="Estilo.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Ejemplo Básico</h1>
-    <script src="main.js"></script>
+    <header class="barraSuperior">
+        <img class="inicio" src="https://cdn-icons-png.flaticon.com/512/1515/1515474.png" alt="logo">
+        TV Series
+    </header>
+    <div class = "row">
+        <div class ="col-6 p-5">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Channel</th>
+                    <th scope="col">Seasons</th>
+                </tr>
+                </thead>
+                <tbody id = "series">   </tbody>
+            </table>
+            <h6 id="seasons-avg"></h6>
+        </div>
+        <div class ="col-6 p-5" id = "card">
+        </div>
+    </div>  
+    <script type="module" src = "./scripts/Serie.js" ></script>
+    <script type="module" src = "./scripts/data.js" ></script>
+    <script type="module" src = "./scripts/main.js" ></script>
 </body>
 </html>
